@@ -6,7 +6,7 @@ $this->pageTitle=Yii::app()->name;
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-<p>Test for Cotejos.</p>
+<p>Test2 for Cotejos.</p>
 <p>Site Cotejos</p>
 <p>You may change the content of this page by modifying the following two files:</p>
 <ul>

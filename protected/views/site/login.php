@@ -1,53 +1,58 @@
-<?php
-/* @var $this SiteController */
-/* @var $model LoginForm */
-/* @var $form CActiveForm  */
+<style TYPE="text/css">
+    .redes_sociales{
+        width: 60px;
+    }
+</style> 
+<div class="row">
+    <div class="col-lg-12">
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-contents">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="" class="navbar-brand">Cotejos</a>
+                </div>
+            </div>
+    </div>
 
-$this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
-?>
+    <div class="col-lg-12">
 
-<h1>Login</h1>
+        <div class="col-lg-1">
 
-<p>Please fill out the following form with your login credentials:</p>
+        </div>
 
-<div class="form">
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'login-form',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
-)); ?>
+        <div class="col-lg-4">
+            <button type="button" class="btn btn-primary">Ingreso Manual</button><br><br>
+            <img src="<?php echo Yii::app()->theme->baseUrl . '/imagenes/Social-Network-Facebook-icon.png' ?>" alt="Facebook" class ="redes_sociales">
+            <img src="<?php echo Yii::app()->theme->baseUrl . '/imagenes/Google-plus-icon.png' ?>" class ="redes_sociales" alt="Google Plus">
+        </div>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+        <div class="col-lg-2">
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
-	</div>
+        </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
-	</div>
+        <div class="col-lg-4">
+            <form role="form">
+                <div class="form-group">
+                    <label for="user_email">Usuario</label>
+                    <input type="email" class="form-control" id="user_email" placeholder="Ingresa tu email">
+                </div>
 
-	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>
+                <div class="form-group">
+                    <label for="user_password">Contraseña</label>
+                    <input type="password" class="form-control" id="user_password" placeholder="Ingresa tu contraseña">
+                </div>
+            </form>
+            <button type="button" class="btn btn-primary">Ingresar</button>
+        </div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
-	</div>
+        <div class="col-lg-1">
 
-<?php $this->endWidget(); ?>
-</div><!-- form -->
+        </div>
+
+    </div>
+</div>

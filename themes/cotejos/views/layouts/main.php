@@ -29,60 +29,13 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
    
-<body>
-    <header class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-contents">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="" class="navbar-brand">Cotejos</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-contents">
-                <ul class="nav navbar-nav" role="navigation">
-                    <li><a href="#">Torneos</a></li>
-                    <li><a href="#">Partidos</a></li>
-                    <li><a href="#">Equipos</a></li>
-                    <li><a href="#">Jugadores</a></li>
-                    <li><a href="#">Canchas</a></li>
-                </ul>
-                
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Entrar</a></li>
-                    <li><a href="#">Salir</a></li>
-                    <li><button class="bnt btn-warning navbar-btn btn-sm" type="button">Tour</button></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    
-    <div class="container">
-        <section>
-            <div class="well well-lg text-center">
-                <h1>Conoce nuevas personas para jugar tu deporte favorito</h1>
-                            <ul class="list-unstyled">
-                <li>
-                    <h3><a href="#">Partidos</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#">Jugadores</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#">Torneos</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#">Y Mas..</a></h3>
-                </li>
-            </ul>
-                <a href="#" class="btn btn-warning btn-lg">Entrar</a> o <a href="">Toma el tour</a>
-            </div>
+    <body>
+        <div class="col-lg-12">
 
-            
-        </section>
-    </div>
+            <?php echo $content; ?>
+            <div class="clear"></div>
+        </div>
+
     
     
     
